@@ -1,0 +1,40 @@
+{
+  "name": "astronomical-service",
+  "version": "1.0.0",
+  "description": "A web service that provides basic information about astronomical objects, distances, dimensions etc. This web service is mostly appopriate for primary school kids. ",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "astronomy",
+    "stars",
+    "planets",
+    "solar",
+    "system",
+    "galaxies",
+    "clusters",
+    "constellations"
+  ],
+  "author": "Aditya Inapurapu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+    "nodemonConfig": {
+      "restartable": "rs",
+      "ignore": [
+        "node_modules/**/node_modules"
+      ],
+      "delay": "2500",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 4000
+      }
+    }
+}
